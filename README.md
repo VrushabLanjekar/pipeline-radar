@@ -31,4 +31,4 @@ Then open the `http://localhost:...` link printed in the terminal.
 
 Hosted on Vercel. The project setting `NITRO_PRESET=vercel` makes the build target Vercel.
 
-Stack: React, TypeScript, TanStack Start, Tailwind CSS, shadcn/ui, Recharts. First version generated with Lovable.
+Stack: React, TypeScript, TanStack Start, Tailwind CSS, shadcn/ui, Recharts.
