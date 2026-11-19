@@ -3,7 +3,7 @@
 Web dashboard for the DPFP project (Data-Pipeline Failure Prediction): it shows which data pipelines are likely to fail on their next daily run, why, and how past forecasts turned out.
 
 - Pipeline, model and data: https://github.com/VrushabLanjekar/DPFP-Project
-- Data the app reads (rebuilt every day at 08:00 IST by GitHub Actions): https://vrushablanjekar.github.io/DPFP-Project/data.json
+- Data the app reads (rebuilt every day at 08:00 IST by GitHub Actions): https://raw.githubusercontent.com/VrushabLanjekar/DPFP-Project/main/dashboard/data.json
 
 The app has no backend or database. It loads the public `data.json`, `outputs/forecast_log.csv` and the run logs from the DPFP repo in the browser.
 

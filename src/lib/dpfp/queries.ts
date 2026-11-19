@@ -3,10 +3,11 @@ import { parseForecastLog, parseHistory } from "./csv";
 import type { DpfpData, Pipeline } from "./types";
 
 export const REPO = "github.com/VrushabLanjekar/DPFP-Project";
-export const DATA_URL = "https://vrushablanjekar.github.io/DPFP-Project/data.json";
 export const LOG_URL =
   "https://raw.githubusercontent.com/VrushabLanjekar/DPFP-Project/main/outputs/forecast_log.csv";
 const RAW_BASE = "https://raw.githubusercontent.com/VrushabLanjekar/DPFP-Project/main";
+// Read from the repo itself: it is always current and does not depend on GitHub Pages being up.
+export const DATA_URL = `${RAW_BASE}/dashboard/data.json`;
 
 export function historyUrl(p: Pipeline): string {
   return `${RAW_BASE}/${p.table.replace(/^\/+|\/+$/g, "")}/pipeline_runs.csv`;
